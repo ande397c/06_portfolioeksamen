@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #283747;
 }
 
 img {
@@ -14,8 +15,13 @@ img {
   height: auto;
 }
 
-main {
-  background-color: #283747;
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
 }
 
 /* Baggrundsbilede / first_section */
@@ -54,24 +60,6 @@ main {
   max-height: 1.5rem;
 }
 
-.bouncing {
-  animation-name: bouncing_kf;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-
-@keyframes bouncing_kf {
-  from {
-    transform: translateY(5vw);
-  }
-
-  to {
-    transform: translateY(2.5vw);
-  }
-}
-
 #second_section p {
   font-size: 25px;
 }
@@ -79,11 +67,6 @@ main {
 #second_section h2 {
   padding: 1.5rem;
   padding-bottom: 0;
-}
-
-#second_section hr {
-  color: white;
-  width: 70%;
 }
 
 /*  third_section */
@@ -185,6 +168,26 @@ main {
 .navbar_links li:hover {
   background-color: gray;
 }
+
+/*  animationer */
+.bouncing {
+  animation-name: bouncing_kf;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes bouncing_kf {
+  from {
+    transform: translateY(5vw);
+  }
+
+  to {
+    transform: translateY(2.5vw);
+  }
+}
+
 /* Burger menu */
 .bar1,
 .bar2,
@@ -256,31 +259,40 @@ main {
   }
   /* Burger menu slut */
 
-  /* Forside dekstop */
+  /*..... Forside dekstop .....*/
 }
 
 @media (min-width: 1000px) {
-  #second_section h2 {
-    padding-top: 3rem;
-  }
-
+  /*..... first_section .....*/
   #first_section h1 {
     font-size: 60px;
   }
 
+  /*..... second_section .....*/
+  #second_section h2 {
+    padding-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /*..... third_section .....*/
   #third_section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 10px;
     row-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-
+  /*..... fourth_section .....*/
   #fourth_section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   #fourth_section img {
     grid-column: 1 / span 2;
@@ -295,5 +307,27 @@ main {
   }
   #fourth_section h2 {
     grid-column: 3 / span 2;
+  }
+  /*..... fourth_section slut .....*/
+
+  /*..... Om side.....*/
+
+  #section1_om {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #section1_om p {
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  #section1_om #garder {
+    grid-row: 2;
+    grid-column: 2;
   }
 }
