@@ -28,6 +28,10 @@ a {
   color: white;
 }
 
+ul {
+  color: white;
+}
+
 /* Baggrundsbilede / first_section */
 #first_section {
   width: 100%;
@@ -163,7 +167,7 @@ a {
   font-size: 1.5rem;
 }
 
-/* Hover */
+/*....... Hover .......*/
 
 .navbar_links li a {
   text-decoration: none;
@@ -185,7 +189,7 @@ a {
   background: #fff;
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -8px;
   transition: 0.4s;
 }
 
