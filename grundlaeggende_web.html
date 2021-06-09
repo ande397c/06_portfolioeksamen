@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Grundlæggende web</title>
   </head>
-  <body>
+  <body class="web_body">
     <header>
       <nav class="navbar">
         <div class="navn">Portfolio</div>
@@ -24,7 +24,7 @@
             <li><a href="index.html">Forside</a></li>
             <li><a href="om.html">Om</a></li>
             <li><a href="grundlaeggende_web.html">Grundlæggende web</a></li>
-            <li><a href="#">UX</a></li>
+            <li><a href="ux.html">UX</a></li>
             <li><a href="#">Animation</a></li>
             <li><a href="#">Grundlæggende indhold</a></li>
           </ul>
@@ -34,41 +34,83 @@
     <main>
       <h2>Grundlæggende Web</h2>
 
-      <img
-        src="img/grundlaeggende_web/grundlaeggende_web.png"
-        alt="Grundlæggende Web"
-      />
+      <section id="section1_web">
+        <section id="section1_billede_wrapper">
+          <img
+            src="img/grundlaeggende_web/grundlaeggende_web.png"
+            alt="Grundlæggende Web"
+          />
+        </section>
 
-      <p>
-        Responsive site v2 var den første introduktion til kodning for mit
-        vedkommende. Jeg har efterfølgende lært meget både på godt og ondt. Vi
-        havde op til denne aflevering haft gennemgået forskellige øvelser, så vi
-        var bedst mulig klædt på til opgaven.
-      </p>
+        <section id="section1_tekst_wrapper">
+          <p>
+            Som en af de primære første opgaver på semesteret hrøte der utrolig
+            meget information med til arbejdet med dette site. Responsive site
+            v2 var desuden den første introduktion til kodning for mit
+            vedkommende. Vi havde op til denne aflevering haft gennemgået
+            forskellige øvelser, så vi var bedst mulig klædt på til opgaven.
+          </p>
 
-      <p><strong> Opgavens hovedpunkter</strong></p>
+          <p><strong> Opgavens hovedpunkter</strong></p>
 
-      <ul>
-        <li>Siden skulle følge forudbestemte layoutdiagram</li>
-        <li>Siden skulle være responsiv</li>
-        <li>Placere tekst / ikon</li>
-        <li>Der skulle gøres brug af webfonte (google font + @fontface</li>
-      </ul>
-      <p><strong> Proces</strong></p>
-      <p>
-        Udover ovenstående krav, så krævede opgaven også noget indledende
-        arbejde. Holdet havde i grupper fået tildelt en stilart, hvilket vi
-        forinden havde præsenteret og sat os ind i. Min gruppes tildelte stilart
-        var <strong>minimalisme</strong> Derudover havde vi i undervisningen
-        lært om moodboard, styletile, typografi og andre visuelle udtryk.
-      </p>
+          <ul>
+            <li>Siden skulle følge forudbestemte layoutdiagram</li>
+            <li>Siden skulle være responsiv</li>
+            <li>Placere tekst / ikon</li>
+            <li>Der skulle gøres brug af webfonte (google font + @fontface</li>
+          </ul>
+        </section>
+      </section>
+      <div id="p_section2">
+        <p><strong> Proces</strong></p>
+      </div>
 
-      <img
-        src="img/grundlaeggende_web/moodboard_minimalisme.jpg"
-        alt="moodboard minimalsime"
-      />
+      <section id="section2_web">
+        <p>
+          Udover ovenstående krav, så krævede opgaven også noget indledende
+          arbejde. Holdet havde i grupper fået tildelt en stilart, hvilket vi
+          forinden havde præsenteret og sat os ind i. Min gruppes tildelte
+          stilart var <strong>minimalisme</strong> Derudover havde vi i
+          undervisningen lært om moodboard, styletile, typografi og andre
+          visuelle udtryk. Opgaven blev såldedes brugt til at udforske dem
+          tildelte stil, samt få en fornemmelse af det forarbejde der høre til
+          udarbejdelsen af en hjemmeside.
+        </p>
+      </section>
 
-      <p>Processen</p>
+      <section id="section3_web">
+        <img
+          src="img/grundlaeggende_web/moodboard_minimalisme.jpg"
+          alt="moodboard minimalsime"
+        />
+
+        <p>
+          Undervisningen i visuelle og grafiske udtryk var med til at forme det
+          endelig website. Her blev der blandt andet benyttet viden om typer
+          samt brugen af fonte. Ved udabejdelsen af websitet blev serif fonte,
+          eller display fonte benyttet som overskrifter, mens sans-serif blev
+          benyttet som brødtekst. Det var begrænset hvor meget man personligt
+          kunne påvirke det egentlige layout, i det en del af opgaven betod i at
+          følge et forhåndsbestemt diagram
+        </p>
+      </section>
+
+      <div id="p_section4">
+        <p><strong> bemærkninger</strong></p>
+      </div>
+
+      <section id="section4_web">
+        <p>
+          Opgaven i sig selv foregik så godt som den kunne. der blev
+          introduceret mange nye elementer men hertil også en stejl
+          læringskurve. Umiddelbare tekniske bemærkninger til denne opgave er
+          ikke at benytte max-width på section_wrapper, da det resulterer i at
+          siden bliver presset lidt sammen i den ene side. Importeringen af
+          @fontface gik hellere ikke igennem, så det er kun de udvalgte google
+          fonts der er synlige.
+        </p>
+        <p>Se det endelige site her</p>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
