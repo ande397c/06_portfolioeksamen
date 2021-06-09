@@ -58,23 +58,35 @@ ul {
   grid-column: 3/4;
 }
 
-/*  second_section */
+/*   box section */
 
-#second_section {
+.box1 {
   text-align: center;
 }
 
-#second_section img {
+.box1 img {
   max-height: 1.5rem;
 }
 
-#second_section p {
+.box1 p {
   font-size: 25px;
+  color: black;
+  margin: 0;
 }
 
-#second_section h2 {
-  padding: 1.5rem;
+.box1 h2 {
+  padding: 2.5rem;
   padding-bottom: 0;
+}
+
+.box1 {
+  background: #283747 none repeat scroll 0 0;
+  border-radius: 50% / 0.75em;
+  bottom: -4rem;
+  height: 10em;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 /*  third_section */
@@ -102,19 +114,19 @@ ul {
 }
 .button1:hover {
   background-color: rgba(59, 61, 61, 0.8);
-  opacity: 0.9;
+  scale: 1.1;
 }
 .button2:hover {
   background-color: rgba(59, 61, 61, 0.8);
-  opacity: 0.9;
+  scale: 1.1;
 }
 .button3:hover {
   background-color: rgba(59, 61, 61, 0.8);
-  opacity: 0.9;
+  scale: 1.1;
 }
 .button4:hover {
   background-color: rgba(59, 61, 61, 0.8);
-  opacity: 0.9;
+  scale: 1.1;
 }
 #third_section img {
   transition: transform 0.5s;
@@ -256,6 +268,12 @@ ul {
 
 /* @media */
 
+@media (min-width: 800px) {
+  .box1 {
+    bottom: -4rem;
+  }
+}
+
 @media (max-width: 1000px) {
   /* Burger menu */
   #burger_knap {
@@ -302,11 +320,9 @@ ul {
     font-size: 60px;
   }
 
-  /*..... second_section .....*/
-  #second_section h2 {
-    padding-top: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+  /*..... box section .....*/
+  .box1 {
+    bottom: -5rem;
   }
 
   /*..... third_section .....*/
@@ -363,5 +379,31 @@ ul {
   #section1_om #garder {
     grid-row: 2;
     grid-column: 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .box1 {
+    bottom: -8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box1 {
+    bottom: -7rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .box1 {
+    bottom: -5rem;
+  }
+
+  #third_section {
+    padding-top: 2rem;
+  }
+
+  .box1 h2 {
+    padding: 3.5rem;
   }
 }
