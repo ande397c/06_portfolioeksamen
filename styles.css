@@ -44,6 +44,27 @@ footer {
   background-color: #282828;
 }
 
+footer h2 {
+  padding-top: 2rem;
+}
+
+#sociale_logoer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 1rem;
+}
+#sociale_logoer img {
+  max-width: 2.5rem;
+  filter: grayscale(50%);
+}
+
+#sociale_logoer img:hover {
+  filter: grayscale(0%);
+  scale: 1.1;
+}
+
 /* Baggrundsbilede / first_section */
 #first_section {
   width: 100%;
@@ -303,6 +324,9 @@ footer {
   #section3_ux img {
     padding-bottom: 1rem;
   }
+  .navbar_links li {
+    font-size: 1.2rem;
+  }
 }
 
 /* @media (min-width 800px)*/
@@ -310,6 +334,15 @@ footer {
 @media (min-width: 800px) {
   .box1 {
     bottom: -4rem;
+  }
+
+  #section2_animation img {
+    max-width: 80%;
+  }
+
+  #animation {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -435,7 +468,7 @@ footer {
   }
   /*..... forside box.....*/
   .box1 {
-    bottom: -4rem;
+    bottom: -5rem;
   }
   /*..... grundlæggende web side.....*/
   #section1_web {
@@ -513,6 +546,14 @@ footer {
   #section3_ux {
     padding-top: 1rem;
   }
+
+  #section1_animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    margin-left: 5%;
+  }
 }
 
 /*..... Afholde box1 fra at placere sig for langt oppe 
@@ -554,5 +595,10 @@ på forsiden.....*/
     height: 50px;
     top: 7px;
     position: relative;
+  }
+
+  .navn {
+    font-size: 2rem;
+    margin: 0.5rem;
   }
 }
