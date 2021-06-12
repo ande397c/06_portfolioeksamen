@@ -96,7 +96,9 @@ footer h2 {
   grid-row: 3/5;
   grid-column: 3/4;
 }
-
+.cursor {
+  cursor: pointer;
+}
 /*   box section */
 
 .box1 {
@@ -104,7 +106,7 @@ footer h2 {
 }
 
 .box1 img {
-  max-height: 1.5rem;
+  max-height: 2.5rem;
 }
 
 .box1 p {
@@ -155,19 +157,15 @@ footer h2 {
 
 /*  hover kanpper */
 .button1:hover {
-  background-color: rgba(59, 61, 61, 0.8);
   scale: 1.1;
 }
 .button2:hover {
-  background-color: rgba(59, 61, 61, 0.8);
   scale: 1.1;
 }
 .button3:hover {
-  background-color: rgba(59, 61, 61, 0.8);
   scale: 1.1;
 }
 .button4:hover {
-  background-color: rgba(59, 61, 61, 0.8);
   scale: 1.1;
 }
 
@@ -338,13 +336,13 @@ footer h2 {
 /* @media (min-width 800px)*/
 
 @media (min-width: 800px) {
-  main {
+  /* main {
     margin-right: 5%;
     margin-left: 5%;
-  }
+  } */
 
   .box1 {
-    bottom: -4rem;
+    bottom: -5rem;
   }
 
   #section2_animation img {
@@ -419,7 +417,7 @@ footer h2 {
 
   /*..... box section .....*/
   .box1 {
-    bottom: -5rem;
+    bottom: -6rem;
   }
 
   /*..... third_section .....*/
@@ -478,9 +476,7 @@ footer h2 {
     grid-column: 2;
   }
   /*..... forside box.....*/
-  .box1 {
-    bottom: -5rem;
-  }
+
   /*..... grundlæggende web side.....*/
   #section1_web {
     display: grid;
@@ -566,6 +562,26 @@ footer h2 {
     margin-left: 5%;
   }
 
+  #section2_animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #section3_animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  #section4_animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
   #section1_indhold {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -615,7 +631,7 @@ på forsiden.....*/
 /* @media (min-width 1100px)*/
 @media (min-width: 1100px) {
   .box1 {
-    bottom: -4rem;
+    bottom: -5rem;
   }
   .navbar_links li {
     font-size: 1.2rem;
@@ -624,7 +640,7 @@ på forsiden.....*/
 /* @media (min-width 1300px)*/
 @media (min-width: 1300px) {
   .box1 {
-    bottom: -5rem;
+    bottom: -6rem;
   }
 
   #third_section {
