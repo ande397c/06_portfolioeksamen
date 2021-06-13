@@ -41,10 +41,9 @@ ul {
   position: relative;
 }
 
-hr {
+/* hr {
   border: 1px solid white;
-  width: 70%;
-}
+} */
 
 footer {
   background-color: #282828;
@@ -152,21 +151,21 @@ footer h2 {
   border-radius: 12px;
   cursor: pointer;
   margin-top: 1rem;
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
 }
 
 /*  hover kanpper */
 .button1:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 .button2:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 .button3:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 .button4:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 
 /*  img hover */
@@ -216,6 +215,10 @@ footer h2 {
 .navn {
   font-size: 1.5rem;
   margin: 0.5rem;
+}
+
+.navn a {
+  text-decoration: none;
 }
 
 .navbar_links ul {
@@ -509,9 +512,10 @@ footer h2 {
     margin-right: 5%;
   }
 
-  #section3_web img {
+  /* #section3_web img {
     grid-column: 2;
-  }
+  } */
+
   #section3_web p {
     grid-column: 1;
     grid-row: 1;
