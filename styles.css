@@ -2,6 +2,10 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 
 body {
   margin: 0;
@@ -18,12 +22,20 @@ img {
 
 p {
   color: white;
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
   /* max-width: 60ch; */
 }
 
 h2 {
   color: white;
   text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
 }
 
 a {
@@ -32,6 +44,7 @@ a {
 
 ul {
   color: white;
+  font-size: 20px;
 }
 
 .line {
@@ -41,10 +54,11 @@ ul {
   position: relative;
 }
 
-/* hr {
+hr {
   border: 1px solid white;
-} */
-
+  width: 90%;
+}
+/*...... Footer .........*/
 footer {
   background-color: #282828;
 }
@@ -70,6 +84,17 @@ footer h2 {
   scale: 1.1;
 }
 
+#pil_op img {
+  max-width: 3rem;
+  top: -10rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+#fourth_section img {
+  padding-top: 1rem;
+}
+
 /* Baggrundsbilede / first_section */
 #first_section {
   width: 100%;
@@ -80,6 +105,7 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  background-position: 90% 10%;
 }
 
 #first_section h1 {
@@ -129,12 +155,18 @@ footer h2 {
   z-index: 1;
 }
 
+.box1 img {
+  margin: 0;
+}
+
 /*  third_section */
 
 #third_section {
   text-align: center;
 }
-
+#third_section h2 {
+  padding-top: 2rem;
+}
 /*  knapper til tema oversigt*/
 .button1,
 .button2,
@@ -194,9 +226,6 @@ footer h2 {
   text-align: center;
 }
 
-#fourth_section p {
-  line-height: 25px;
-}
 /*  .......UX side ......... */
 
 .prototyper_ux img {
@@ -258,15 +287,9 @@ footer h2 {
   transition: 0.4s;
 }
 
-/* Hover færdig*/
-
 .navbar_links li:hover::after {
   width: 100%;
 }
-
-/* .navbar_links li:hover {
-  background-color: gray;
-} */
 
 /*  .......... animationer ......... */
 .bouncing {
@@ -351,11 +374,6 @@ footer h2 {
   #section2_animation img {
     max-width: 80%;
   }
-
-  #animation {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 }
 
 /* @media (max-width 1000px)*/
@@ -433,29 +451,18 @@ footer h2 {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   /*..... fourth_section .....*/
   #fourth_section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-gap: 20px;
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 2rem;
   }
-  #fourth_section img {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 4;
-    padding-top: 1.5rem;
-  }
-  #fourth_section p {
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 2;
-    line-height: 25px;
-    font-size: 20px;
-  }
-  #fourth_section h2 {
-    grid-column: 3 / span 2;
-  }
+
   /*..... fourth_section slut .....*/
 
   /*..... Om side.....*/
@@ -469,7 +476,7 @@ footer h2 {
     margin-right: 5%;
   }
 
-  #section1_om p {
+  #om p {
     line-height: 25px;
     font-size: 20px;
   }
@@ -477,6 +484,15 @@ footer h2 {
   #section1_om #garder {
     grid-row: 2;
     grid-column: 2;
+  }
+
+  #section2_om {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   /*..... forside box.....*/
 
@@ -512,16 +528,13 @@ footer h2 {
     margin-right: 5%;
   }
 
-  /* #section3_web img {
-    grid-column: 2;
-  } */
-
   #section3_web p {
     grid-column: 1;
     grid-row: 1;
   }
-  ß .web_body p {
+  #web p {
     line-height: 25px;
+    font-size: 20px;
   }
 
   #section4_web {
@@ -531,6 +544,11 @@ footer h2 {
   #p_section4 {
     text-align: center;
     padding-top: 1rem;
+  }
+
+  #ux p {
+    line-height: 25px;
+    font-size: 20px;
   }
 
   #section1_ux {
@@ -558,6 +576,11 @@ footer h2 {
     padding-top: 1rem;
   }
 
+  #animation p {
+    line-height: 25px;
+    font-size: 20px;
+  }
+
   #section1_animation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -570,6 +593,8 @@ footer h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #section3_animation {
@@ -577,6 +602,8 @@ footer h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #section4_animation {
@@ -584,6 +611,8 @@ footer h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #section1_indhold {
@@ -635,7 +664,7 @@ på forsiden.....*/
 /* @media (min-width 1100px)*/
 @media (min-width: 1100px) {
   .box1 {
-    bottom: -5rem;
+    bottom: -4rem;
   }
   .navbar_links li {
     font-size: 1.2rem;
@@ -673,5 +702,49 @@ på forsiden.....*/
   .navn {
     font-size: 2rem;
     margin: 0.5rem;
+  }
+
+  #billede_p {
+    padding-top: 3rem;
+    font-size: 35px;
+  }
+
+  #forside p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #om p,
+  ul {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #web p,
+  ul {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #animation p,
+  ul {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #indhold p,
+  ul {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

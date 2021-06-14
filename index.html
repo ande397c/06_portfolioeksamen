@@ -4,47 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfolio website</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="navn">
-          <a href="index.html"> Portfolio </a>
-        </div>
+  <body id="forside">
+    <section id="top">
+      <header>
+        <nav class="navbar">
+          <div class="navn">
+            <a href="index.html"> Portfolio </a>
+          </div>
 
-        <div id="burger_knap">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+          <div id="burger_knap">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
 
-        <div class="navbar_links">
-          <ul id="menu">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="om.html">Om</a></li>
-            <div class="line"></div>
-            <li><a href="grundlaeggende_web.html">Grundlæggende web</a></li>
-            <li><a href="ux.html">UX</a></li>
-            <li><a href="animation.html">Animation</a></li>
-            <li>
-              <a href="grundlaeggende_indhold.html">Grundlæggende indhold</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+          <div class="navbar_links">
+            <ul id="menu">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="om.html">Om</a></li>
+              <div class="line"></div>
+              <li><a href="grundlaeggende_web.html">Grundlæggende web</a></li>
+              <li><a href="ux.html">UX</a></li>
+              <li><a href="animation.html">Animation</a></li>
+              <li>
+                <a href="grundlaeggende_indhold.html">Grundlæggende indhold</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
 
     <main>
       <section id="first_section">
         <h1>Portfolio</h1>
-        <p>Anders Iversen</p>
+        <p id="billede_p">Anders Iversen</p>
       </section>
 
       <div class="box1">
         <p>Udforsk</p>
-        <img src="img/logo/pil.svg" class="bouncing" alt="pil" />
+        <a href="index.html#third_section">
+          <img src="img/logo/pil.svg" class="bouncing" alt="pil" />
+        </a>
         <h2>Temaer 1. semester</h2>
       </div>
 
@@ -92,20 +101,22 @@
       </section>
 
       <section id="fourth_section">
-        <h2>Bliv klogere på mig</h2>
+        <section id="billde_wrapper">
+          <a href="om.html">
+            <img src="img/forside/lysshow.png" alt="portræt lysshow" />
+          </a>
+        </section>
 
-        <img
-          src="img/forside/lysshow.png"
-          id="mig"
-          class="cursor"
-          alt="portræt lysshow"
-        />
+        <section id="tekst_wrapper">
+          <h2>Bliv klogere på mig</h2>
 
-        <p>
-          Velkommen til mit portofolio website. Mit navn er Anders Iversen, jeg
-          er 21 år og studerer Multimediedesign på KEA. Er du interesseret i at
-          vide mere om mig og min baggrund, så klik <a href="om.html"> her</a>
-        </p>
+          <p>
+            Velkommen til mit portofolio website. Mit navn er Anders Iversen,
+            jeg er 21 år og studerer Multimediedesign på KEA. Er du interesseret
+            i at vide mere om mig og min baggrund, så klik
+            <a href="om.html"> her</a>
+          </p>
+        </section>
       </section>
     </main>
     <script src="script.js"></script>
@@ -120,6 +131,12 @@
       </a>
       <a href="https://www.instagram.com/anderst25/">
         <img src="img/logo/insta_logo.png" alt="insta_logo" />
+      </a>
+    </section>
+
+    <section id="pil_op">
+      <a href="index.html#top">
+        <img src="img/logo/pil_op.svg" class="bouncing" alt="pil til top" />
       </a>
     </section>
   </footer>
