@@ -136,7 +136,6 @@ footer h2 {
 
 .box1 p {
   font-size: 25px;
-  color: color;
   margin: 0;
 }
 
@@ -725,6 +724,14 @@ på forsiden.....*/
   }
 
   #web p,
+  ul {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #ux p,
   ul {
     line-height: 30px;
     font-size: 20px;
