@@ -698,7 +698,7 @@ på forsiden.....*/
 /* @media (min-width 1100px)*/
 @media (min-width: 1100px) {
   .box1 {
-    bottom: -5rem;
+    bottom: -7rem;
   }
   .navbar_links li {
     font-size: 1.2rem;
@@ -739,7 +739,7 @@ på forsiden.....*/
 /* @media (min-width 1300px)*/
 @media (min-width: 1300px) {
   .box1 {
-    bottom: -6rem;
+    bottom: -7rem;
   }
 
   #third_section {
