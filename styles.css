@@ -149,6 +149,8 @@ footer h2 {
   padding-bottom: 0;
 }
 
+/* løsning / inspiration fundet på:https://stackoverflow.com/questions/54719260/curved-header-with-pure-css/54720288 */
+
 .box1 {
   background: #283747 none repeat scroll 0 0;
   border-radius: 50% / 0.75em;
